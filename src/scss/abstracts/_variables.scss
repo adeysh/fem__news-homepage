@@ -1,0 +1,40 @@
+@use './functions' as *;
+
+:root {
+    /* Colors */
+
+    // primary
+    --soft-orange: #e9ab53;
+    --soft-red: #f15e50;
+
+    // neutral
+    --off-white: #fffdfa;
+    --grayish-blue: #c5c6ce;
+    --dark-grayish-blue: #5d5f79;
+    --very-dark-blue: #00001a;
+
+    // naming colors
+    --Porsche: var(--soft-orange);
+    --Carnation: var(--soft-red);
+
+    --Romance: var(--off-white);
+    --French-Gray: var(--grayish-blue);
+    --Comet: var(--dark-grayish-blue);
+    --Black-Russian: var(--very-dark-blue);
+
+    /* font-family */
+    --ff-primary: 'Inter', sans-serif;
+
+    /* font-sizes */
+    --fs-xl: clamp(2.5rem, 2.147887323943662rem + 1.5023474178403755vw, 3.5rem);
+    --fs-l: clamp(2rem, 1.823943661971831rem + 0.7511737089201878vw, 2.5rem);
+    --fs-m: #{rem(32)};
+    --fs-s: #{rem(20)};
+    --fs-xs: #{rem(18)};
+    --fs-body: #{rem(15)};
+
+    /* font-weights */
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+}
