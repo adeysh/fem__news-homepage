@@ -1,0 +1,26 @@
+@use '../abstracts' as a;
+
+.featured {
+    &__image {}
+
+    &__title {
+        font-size: var(--fs-xl);
+        font-weight: var(--fw-extra-bold);
+        color: var(--Black-Russian);
+    }
+
+    &__description {
+        color: var(--Comet);
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: var(--Carnation);
+        color: var(--Romance);
+        font-size: var(--fs-2xs);
+        font-weight: var(--fw-bold);
+        letter-spacing: 0.31em;
+        text-transform: uppercase;
+        padding: var(--space-1) var(--space-2-5);
+    }
+}

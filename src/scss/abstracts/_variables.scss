@@ -32,9 +32,21 @@
     --fs-s: #{rem(20)};
     --fs-xs: #{rem(18)};
     --fs-body: #{rem(15)};
+    --fs-2xs: #{rem(14)};
 
     /* font-weights */
     --fw-regular: 400;
     --fw-bold: 700;
     --fw-extra-bold: 800;
+
+    /* spacing */
+    --space-1: #{rem(12)};
+    --space-2: #{rem(24)};
+    --space-3: #{rem(36)};
+    --space-4: #{rem(48)};
+    --space-5: #{rem(60)};
+    --space-6: #{rem(72)};
+
+    /* Custom spacings */
+    --space-2-5: #{rem(32)};
 }
