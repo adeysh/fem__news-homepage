@@ -1,0 +1,22 @@
+@use '../abstracts' as a;
+
+.header {
+    &__logo {
+        width: a.rem(45);
+
+        @include a.bp($from: "desktop") {
+            width: a.rem(64);
+        }
+    }
+
+    &__link {
+        color: var(--Black-Russian);
+        font-size: var(--fs-xs);
+        line-height: 1.3;
+
+        @include a.bp($from: "desktop") {
+            font-size: var(--fs-body);
+            color: var(--Comet);
+        }
+    }
+}
