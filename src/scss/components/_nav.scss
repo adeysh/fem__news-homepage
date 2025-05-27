@@ -1,0 +1,44 @@
+@use '../abstracts' as a;
+
+.nav {
+    &__button {
+        background: none;
+        border: none;
+        padding: 0;
+
+        &--open {
+            display: block;
+        }
+
+        &--close {
+            display: block;
+            margin-inline-start: auto;
+            margin-block-end: a.rem(86);
+        }
+
+        @include a.bp($from: "desktop") {
+            display: none;
+        }
+    }
+
+    &__content {
+        @include a.bp($to: "desktop") {
+            display: none;
+            position: fixed;
+            inset: 0 0 0 a.rem(120);
+            background-color: var(--Romance);
+            padding: var(--space-2-25);
+            translate: 100vw 0;
+            transition: translate 0.5s ease-in-out;
+        }
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: var(--Black-Russian);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+}

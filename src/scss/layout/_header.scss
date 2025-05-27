@@ -1,12 +1,19 @@
 @use '../abstracts' as a;
 
 .header {
+    @include a.flexbox($align: center, $justify: space-between);
+    padding-block: var(--space-2-25);
+
+    &__links {
+        @include a.flexbox($direction: column, $gap: var(--space-2));
+    }
+
     @include a.bp($from: "desktop") {
-        @include a.flexbox($align: center, $justify: space-between);
+
         padding-block: var(--space-7-5) var(--space-4-5);
 
         &__links {
-            @include a.flexbox($gap: var(--space-3-5));
+            @include a.flexbox($direction: row, $gap: var(--space-3-5));
         }
     }
 }
