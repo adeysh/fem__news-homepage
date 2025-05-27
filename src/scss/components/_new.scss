@@ -18,6 +18,7 @@
         }
 
         &-title {
+            display: inline-block;
             font-size: var(--fs-s);
             font-weight: var(--fw-extra-bold);
             margin-block-end: var(--space-0-5);

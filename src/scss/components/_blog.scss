@@ -1,0 +1,25 @@
+@use '../abstracts' as a;
+
+.blog {
+    &__post {
+        &-image {}
+
+        &-number {
+            color: var(--Carnation);
+            font-size: var(--fs-m);
+            font-weight: var(--fw-bold);
+            line-height: 1;
+        }
+
+        &-title {
+            a {
+                color: var(--Black-Russian);
+                font-size: var(--fs-xs);
+                font-weight: var(--fw-extra-bold);
+                line-height: 1.1;
+            }
+        }
+
+        &-description {}
+    }
+}
