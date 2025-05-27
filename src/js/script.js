@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const btnOpen = document.getElementById("nav-button-open");
 const btnClose = document.getElementById("nav-button-close");
 const navContent = document.querySelector(".nav__content");
@@ -7,11 +8,13 @@ const media = window.matchMedia('( width < 69.375em )');
 function openMobileMenu() {
     console.log("btn open");
     btnOpen.setAttribute("aria-expanded", "true");
+    body.classList.add("no-scroll");
 }
 
 function closeMobileMenu() {
     console.log("btn close");
     btnOpen.setAttribute("aria-expanded", "false");
+    body.classList.remove("no-scroll");
 }
 
 function setupNav(e) {
