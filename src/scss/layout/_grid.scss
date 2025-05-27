@@ -1,0 +1,6 @@
+@use '../abstracts' as a;
+
+.grid {
+    display: grid;
+    gap: var(--space-5-5);
+}

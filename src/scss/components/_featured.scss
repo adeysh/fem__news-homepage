@@ -1,8 +1,6 @@
 @use '../abstracts' as a;
 
 .featured {
-    &__image {}
-
     &__title {
         font-size: var(--fs-xl);
         font-weight: var(--fw-extra-bold);
