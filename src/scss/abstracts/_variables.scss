@@ -40,6 +40,7 @@
     --fw-extra-bold: 800;
 
     /* spacing */
+    --space-0: #{rem(0)};
     --space-1: #{rem(12)};
     --space-2: #{rem(24)};
     --space-3: #{rem(36)};
@@ -48,5 +49,8 @@
     --space-6: #{rem(72)};
 
     /* Custom spacings */
+    --space-0-5: #{rem(8)};
+    --space-1-5: #{rem(20)};
+    --space-2-25: #{rem(30)};
     --space-2-5: #{rem(32)};
 }
