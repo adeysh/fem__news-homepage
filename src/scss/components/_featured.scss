@@ -9,6 +9,10 @@
 
     &__description {
         color: var(--Comet);
+
+        p {
+            margin-block-end: var(--space-2-25);
+        }
     }
 
     &__button {

@@ -1,0 +1,8 @@
+@use '../abstracts' as a;
+
+.new {
+    @include a.bp($from: "desktop") {
+        grid-column: 3 / 3;
+        grid-row: 1 / 3;
+    }
+}
