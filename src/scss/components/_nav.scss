@@ -8,6 +8,16 @@
 
         &--open {
             display: block;
+
+            &[aria-expanded="true"] {
+                ~.nav__content {
+                    translate: 0;
+                }
+
+                ~.nav__overlay {
+                    opacity: 0.5;
+                }
+            }
         }
 
         &--close {
@@ -40,5 +50,6 @@
         background-color: var(--Black-Russian);
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+        pointer-events: none;
     }
 }
