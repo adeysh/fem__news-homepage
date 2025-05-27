@@ -17,6 +17,10 @@
                 font-size: var(--fs-xs);
                 font-weight: var(--fw-extra-bold);
                 line-height: 1.1;
+
+                &:hover {
+                    color: var(--Carnation);
+                }
             }
         }
 

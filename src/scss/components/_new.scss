@@ -23,6 +23,10 @@
             font-weight: var(--fw-extra-bold);
             margin-block-end: var(--space-0-5);
             color: var(--Romance);
+
+            &:hover {
+                color: var(--Porsche);
+            }
         }
 
         &-description {
