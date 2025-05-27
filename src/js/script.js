@@ -7,7 +7,6 @@ const navOverlay = document.querySelector(".nav__overlay");
 const media = window.matchMedia('( width < 69.375em )');
 
 function openMobileMenu() {
-    console.log("btn open");
     btnOpen.setAttribute("aria-expanded", "true");
     body.classList.add("no-scroll");
     navContent.removeAttribute("inert");
@@ -16,7 +15,6 @@ function openMobileMenu() {
 }
 
 function closeMobileMenu() {
-    console.log("btn close");
     btnOpen.setAttribute("aria-expanded", "false");
     body.classList.remove("no-scroll");
     navContent.setAttribute("inert", "");
@@ -26,14 +24,12 @@ function closeMobileMenu() {
 
 function setupNav(e) {
     if (e.matches) {
-        console.log("is mobile");
         navContent.setAttribute("inert", "");
         setTimeout(() => {
             navContent.style.display = "block";
             navOverlay.style.display = "block";
         }, 500);
     } else {
-        console.log("is desktop");
         navContent.removeAttribute("inert");
         navContent.style.display = "";
         main.removeAttribute("inert");
@@ -44,10 +40,3 @@ setupNav(media);
 btnOpen.addEventListener("click", openMobileMenu);
 
 btnClose.addEventListener("click", closeMobileMenu);
-
-// Accessibility
-document.addEventListener("keyup", (e) => {
-    if (e.key === "Tab") {
-        console.log(document.activeElement);
-    }
-});
