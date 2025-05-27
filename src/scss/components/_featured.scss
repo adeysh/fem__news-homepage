@@ -18,15 +18,19 @@
     &__button {
         display: inline-block;
         background-color: var(--Carnation);
-        color: var(--Romance);
+        color: var(--Black-Russian);
+        border: none;
         font-size: var(--fs-2xs);
         font-weight: var(--fw-bold);
         letter-spacing: 0.31em;
         text-transform: uppercase;
         padding: var(--space-1) var(--space-2-5);
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             background-color: var(--Black-Russian);
+            color: var(--Romance);
+            cursor: pointer;
         }
     }
 }

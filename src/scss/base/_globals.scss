@@ -9,12 +9,12 @@ body {
     position: relative;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
-    background-color: var(--Limed-Spruce);
+    background-color: var(--Romance);
     @include a.flexbox($direction: column, $align: center, $justify: center);
     height: auto;
     min-block-size: 100vh;
     line-height: 1.7;
-    padding-block-end: 50vh;
+    padding-block-end: a.rem(100);
 }
 
 h1,
@@ -34,10 +34,20 @@ a {
     text-decoration: none;
     transition: 0.2s ease-in-out;
     transition-property: color, background-color;
+
+    &:focus-visible {
+        outline: 2px solid var(--Black-Russian);
+        outline-offset: a.rem(4);
+    }
 }
 
 button {
     transition: background-color 0.2s ease-in-out;
+
+    &:focus-visible {
+        outline: 2px solid var(--Black-Russian);
+        outline-offset: a.rem(4);
+    }
 }
 
 img {

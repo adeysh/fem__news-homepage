@@ -6,12 +6,20 @@
         border: none;
         padding: 0;
 
+        &:hover {
+            cursor: pointer;
+        }
+
         &--open {
             display: block;
 
             &[aria-expanded="true"] {
                 ~.nav__content {
                     translate: 0;
+
+                    @media (prefers-reduced-motion) {
+                        opacity: 1;
+                    }
                 }
 
                 ~.nav__overlay {
@@ -40,6 +48,12 @@
             padding: var(--space-2-25);
             translate: 100vw 0;
             transition: translate 0.5s ease-in-out;
+        }
+
+        @media (prefers-reduced-motion) {
+            translate: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
     }
 

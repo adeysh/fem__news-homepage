@@ -2,7 +2,6 @@
 
 .blog {
     &__post {
-        &-image {}
 
         &-number {
             color: var(--Carnation);
@@ -18,12 +17,16 @@
                 font-weight: var(--fw-extra-bold);
                 line-height: 1.1;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
                     color: var(--Carnation);
+                    outline: none;
                 }
             }
         }
 
-        &-description {}
+        &-description {
+            color: var(--Comet);
+        }
     }
 }

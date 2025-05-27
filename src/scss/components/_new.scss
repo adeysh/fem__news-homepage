@@ -24,7 +24,8 @@
             margin-block-end: var(--space-0-5);
             color: var(--Romance);
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 color: var(--Porsche);
             }
         }

@@ -19,7 +19,8 @@
             color: var(--Comet);
         }
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             color: var(--Carnation);
         }
     }
