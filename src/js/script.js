@@ -36,6 +36,7 @@ function setupNav(e) {
     }
 }
 setupNav(media);
+media.addEventListener("change", setupNav);
 
 btnOpen.addEventListener("click", openMobileMenu);
 
