@@ -22,6 +22,16 @@ function closeMobileMenu() {
     btnOpen.focus();
 }
 
+function handleOutsideMenuClick(e) {
+    const isMenuOpen = navContent.style.display === "block";
+    const isClickInsideMenu = navContent.contains(e.target);
+    const isClickOnOpenBtn = e.target.closest("#nav-button-open");
+
+    if (isMenuOpen && !isClickInsideMenu && !isClickOnOpenBtn) {
+        closeMobileMenu();
+    }
+}
+
 function setupNav(e) {
     if (e.matches) {
         navContent.setAttribute("inert", "");
@@ -41,3 +51,5 @@ media.addEventListener("change", setupNav);
 btnOpen.addEventListener("click", openMobileMenu);
 
 btnClose.addEventListener("click", closeMobileMenu);
+
+document.addEventListener("click", handleOutsideMenuClick);
